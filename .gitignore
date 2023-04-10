@@ -1,1 +1,10 @@
 .DS_Store
+# Ignore data
+*.bag
+*.zip
+*.png
+data.csv
+.vscode
+.git
+image_enhancement/build
+image_enhancement/.vscode
