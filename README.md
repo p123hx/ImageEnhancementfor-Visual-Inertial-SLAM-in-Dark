@@ -1,6 +1,6 @@
 # ImageEnhancementfor-Visual-Inertial-SLAM-in-Dark
 Image Enhancement for Visual Inertial SLAM in Dark Scenarios
-### W22 EECS 568 Team 4
+### W22 EECS 568 Group 2
 
 This repository contains the code for our final project for EECS 568: Mobile Robotics: Methods and Algorithms. 
 
