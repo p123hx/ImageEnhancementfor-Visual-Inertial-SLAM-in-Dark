@@ -1,3 +1,5 @@
+Note: Our team used the baseline orbslam 3 which is documented below. Our drive folder contains all of the specific .yaml and dataset files for structuring. Our team also noticed a bug within the Settings.cc of the orbslam3 repo our updated copy is contained in the main folder of the repository
+
 # ORB-SLAM3
 
 ### V1.0, December 22th, 2021
