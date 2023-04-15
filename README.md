@@ -1,10 +1,29 @@
 # ImageEnhancementfor-Visual-Inertial-SLAM-in-Dark
+
 Image Enhancement for Visual Inertial SLAM in Dark Scenarios
-### W22 EECS 568 Group 2
 
-This repository contains the code for our final project for EECS 568: Mobile Robotics: Methods and Algorithms. 
+Mobile Robotics Winter 2023 Team 2
 
-Here is our paper (TODO).
-  
-Here is our [final presentation and video](TODO)
+This repository contains the code for our final project for Mobile Robotics. Our project was built off of a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside the visual SLAM algorith called ORB-SLAM3 in order to reduces tracking/ translational error. 
+This repository contains the code for our final project for Mobile Robotics. Our project was built off of a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside the visual SLAM algorith called ORB-SLAM3 in order to reduces tracking/ translational error. Our use case is specifically for dark environments. 
 
+Thew winter 2022 Team's Repository is found [here](https://github.com/Maithilishetty/Mobile_Robotics_Team22). 
+
+Here is our final [presentation](https://docs.google.com/presentation/d/1JiwIiU2ep6RfWaUEhsucTmFSWXvVtnpb/edit#slide=id.p1), [video]() , and final [report](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S). A copy of our google drive folder with the datasets is located [here](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S) as uploading full datasets into git is not effecient.  
+
+Our project uses the Dataset TartanAir which is known for its difficulty.]Within Tartan Air we chose two separate two separate environments called Abandoned Factory Night and Hospital. Abandoned Factory Night was the main dataset around which we tested image enhacement for dark scenarios and Hospital was a secondary dataset used for testing our model on an indoor environment (note this environment however is not dark). 
+
+## Project Features 
+Within this repository there are the image ehancement technique files in the form of jupyter notebooks used to improve the dataset, python files to convert the dataset, there is much of the orbslam 3 repo including our modifications to the Settings.cc file, as well as files for setup of a Docker environment in order to run ORB-SLAM  
+
+## Dataset conversion
+In order to use the Tartan Air dataset it is critical to covert the dataset to a form compatible with ORBSLAM. As mentioned in the ORB-SLAM3 documentation two of such compatible forms are the Euroc and Kitti Formats. Our team used the Kitti Format. 
+
+To convert into kitti form the ground truth run the tartanair_to_kitti.py
+
+
+
+
+There are three separate projects within this repository: ORB-SLAM3 with Image Enhancement, OKVIS with Image Enhancement, and Single Image Enhancement. We used the Aqualoc dataset to test all of our projects. In particular, we made use of Harbor_01 sequence. To run the example dataset, it needs to be in the correct format, which can be downloaded here. You can also download it from source and manually convert it.
+
+ORB_SLAM3_modified, okvis and image_enhancement folders are for the three projects. util folder contains files for checking matched features, extracting timestamps, renaming images from frame number to timestamp, and changing frame number in groundtruth file to timestamp. data folder contains some results we obtained. evaluation folder contains files for evaluation.
