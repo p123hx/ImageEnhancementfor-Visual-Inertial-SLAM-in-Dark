@@ -17,7 +17,7 @@ Our project uses the Dataset [TartanAir](https://theairlab.org/tartanair-dataset
 Within this repository there are the image ehancement technique files in the form of jupyter notebooks used to improve the dataset, python files to convert the dataset, there is much of the orbslam 3 repo including our modifications to the Settings.cc file, as well as files for setup of a Docker environment in order to run ORB-SLAM  
 
 ## Dataset conversion
-In order to use the Tartan Air dataset it is critical to covert the dataset to a form compatible with ORBSLAM. As mentioned in the ORB-SLAM3 documentation two of such compatible forms are the Euroc and Kitti Formats. Our team used the Kitti Format. 
+In order to use the Tartan Air dataset it is critical to covert the dataset to a form compatible with ORBSLAM. As mentioned in the ORB-SLAM3 documentation two of such compatible forms are the Euroc and Kitti Formats. Our team used the Kitti Format. While the original datasets can be pulled directly from TartanAir, our google drive also contains the Dataset Files converted for use. 
 
 To convert the ground truth file into Kitti format run
 ```
@@ -32,9 +32,11 @@ tartan_to_kitt.py
 ## Building Orbslam
 To download orbslam follow the instructions listed on the [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) github and download all needed dependents. If you pull the code directly from orbslam update the Settings.cc file with the ours listed here in order for ORBSLAM3 to function properly. 
 
+To run ORBSLAM3 on a TartanAir Data set: 
+```
+
+```
+## Calculating Absolute Translational Errror 
+To calculate Absolute Translational Error our team used resources from the evo library located [here](https://github.com/MichaelGrupp/evo). 
 
 
-
-There are three separate projects within this repository: ORB-SLAM3 with Image Enhancement, OKVIS with Image Enhancement, and Single Image Enhancement. We used the Aqualoc dataset to test all of our projects. In particular, we made use of Harbor_01 sequence. To run the example dataset, it needs to be in the correct format, which can be downloaded here. You can also download it from source and manually convert it.
-
-ORB_SLAM3_modified, okvis and image_enhancement folders are for the three projects. util folder contains files for checking matched features, extracting timestamps, renaming images from frame number to timestamp, and changing frame number in groundtruth file to timestamp. data folder contains some results we obtained. evaluation folder contains files for evaluation.
