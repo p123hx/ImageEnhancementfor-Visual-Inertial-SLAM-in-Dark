@@ -11,7 +11,7 @@ Thew winter 2022 Team's Repository is found [here](https://github.com/Maithilish
 
 Here is our final [presentation](https://docs.google.com/presentation/d/1JiwIiU2ep6RfWaUEhsucTmFSWXvVtnpb/edit#slide=id.p1), [video]() , and final [report](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S). A copy of our google drive folder with the datasets is located [here](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S) as uploading full datasets into git is not effecient.  
 
-Our project uses the Dataset TartanAir which is known for its difficulty.]Within Tartan Air we chose two separate two separate environments called Abandoned Factory Night and Hospital. Abandoned Factory Night was the main dataset around which we tested image enhacement for dark scenarios and Hospital was a secondary dataset used for testing our model on an indoor environment (note this environment however is not dark). 
+Our project uses the Dataset [TartanAir](https://theairlab.org/tartanair-dataset/) which is known for its difficulty. Within Tartan Air we chose two separate two separate environments called Abandoned Factory Night and Hospital. Abandoned Factory Night was the main dataset around which we tested image enhacement for dark scenarios and Hospital was a secondary dataset used for testing our model on an indoor environment (note this environment however is not dark). 
 
 ## Project Features 
 Within this repository there are the image ehancement technique files in the form of jupyter notebooks used to improve the dataset, python files to convert the dataset, there is much of the orbslam 3 repo including our modifications to the Settings.cc file, as well as files for setup of a Docker environment in order to run ORB-SLAM  
@@ -19,7 +19,18 @@ Within this repository there are the image ehancement technique files in the for
 ## Dataset conversion
 In order to use the Tartan Air dataset it is critical to covert the dataset to a form compatible with ORBSLAM. As mentioned in the ORB-SLAM3 documentation two of such compatible forms are the Euroc and Kitti Formats. Our team used the Kitti Format. 
 
-To convert into kitti form the ground truth run the tartanair_to_kitti.py
+To convert the ground truth file into Kitti format run
+```
+xyzq2kitti.py
+```
+
+To covert the dataset into Kitti format run 
+```
+tartan_to_kitt.py
+```
+
+## Building Orbslam
+To download orbslam follow the instructions listed on the [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) github and download all needed dependents. If you pull the code directly from orbslam update the Settings.cc file with the ours listed here in order for ORBSLAM3 to function properly. 
 
 
 
