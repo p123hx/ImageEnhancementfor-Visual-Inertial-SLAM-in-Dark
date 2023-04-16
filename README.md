@@ -38,9 +38,11 @@ docker-compose up
 ```
 To run ORBSLAM3 on a TartanAir Data set: 
 ```
-
+./Examples/Stereo/stereo_kitti Vocabulary/ORBvoc.txt /media/dataset/tartanair.yaml /media/dataset /media/dataset/timestamp.txt
 ```
 ## Calculating Absolute Translational Errror 
 To calculate Absolute Translational Error our team used resources from the evo library located [here](https://github.com/MichaelGrupp/evo). 
-
+```
+evo_ape kitti gt.txt pred.txt -va -p
+```
 
