@@ -86,7 +86,7 @@ RUN echo "Installing OpenCV last version ..." && \
     #-[] Get ORB-SLAM 3 installation ready
     #-? From : https://github.com/UZ-SLAMLab/ORB_SLAM3
     #-? Another RUN command in order to free memory
-ADD ./ORB_SLAM3 /dpds/ORB_SLAM3
+ADD ../ORB_SLAM3 /dpds/ORB_SLAM3
 RUN echo "Getting ORB-SLAM 3 installation ready ..." && \
     cd /dpds/ && \
     #-! From here, a compilation method is proposed by the repo: "chmod +x build.sh && ./build.sh"
