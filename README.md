@@ -29,9 +29,13 @@ To covert the dataset into Kitti format run
 tartan_to_kitt.py
 ```
 
-## Building Orbslam
-To download orbslam follow the instructions listed on the [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) github and download all needed dependents. If you pull the code directly from orbslam update the Settings.cc file with the ours listed here in order for ORBSLAM3 to function properly. 
-
+## Building Orbslam3
+Refer to [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)
+We have provided an easy way to build and run Orbslam3 using docker(modified volumn in [compose file](https://github.com/p123hx/ImageEnhancementfor-Visual-Inertial-SLAM-in-Dark/blob/main/Docker/docker-compose.yaml) to mount dataset path to the container):
+```
+cd Dockerfile
+docker-compose up
+```
 To run ORBSLAM3 on a TartanAir Data set: 
 ```
 
