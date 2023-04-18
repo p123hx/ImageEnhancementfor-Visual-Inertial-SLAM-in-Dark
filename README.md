@@ -41,9 +41,9 @@ To run ORBSLAM3 on a TartanAir Data set:
 
 ## Image Enhancement
 Go to image_enhancement.
-There are 4 jupyter notebook.
-They are read data from Google Drive. We also recommend using Google colab and taking advantage of CUDA (URetinext_Net.ipynd uses CUDA). 
-Notice that you have change the Google Drive location to the location you want to use.
+There are 4 jupyter notebooks.
+They read data from Google Drive. We also recommend using Google colab and taking advantage of CUDA (URetinext_Net.ipynd uses CUDA). 
+Notice that you have to change the Google Drive location to the location you want to use.
 
 
 ## Calculating Absolute Translational Errror 
