@@ -4,14 +4,14 @@ Image Enhancement for Visual Inertial SLAM in Dark Scenarios
 
 Mobile Robotics Winter 2023 Team 2
 
-This repository contains the code for our final project for Mobile Robotics. Our project was built off of a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside the visual SLAM algorithm called ORB-SLAM3 in order to reduces tracking/ translational error. 
-This repository contains the code for our final project for Mobile Robotics. Our project was built off of a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside the visual SLAM algorith called ORB-SLAM3 in order to reduces tracking/ translational error. Our use case is specifically for dark environments. 
+This repository contains the code for our final project for Mobile Robotics. Our project was based on a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside a visual SLAM algorithm called ORB-SLAM3 in order to reduce tracking error/absolute translational error. 
+Our use case is specifically for dark environments, as opposed to the previous team's emphasis on underwater only environments. 
 
-Thew winter 2022 Team's Repository is found [here](https://github.com/Maithilishetty/Mobile_Robotics_Team22). 
+The winter 2022 Team's Repository is found [here](https://github.com/Maithilishetty/Mobile_Robotics_Team22). 
 
-Here is our final [presentation](https://docs.google.com/presentation/d/1JiwIiU2ep6RfWaUEhsucTmFSWXvVtnpb/edit#slide=id.p1), [video]() , and final [report](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S). A copy of our google drive folder with the datasets is located [here](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S) as uploading full datasets into git is not effecient.  
+Here is our final [presentation](https://docs.google.com/presentation/d/1JiwIiU2ep6RfWaUEhsucTmFSWXvVtnpb/edit#slide=id.p1), [video](https://www.youtube.com/watch?v=Kg4_dr7qAi8), and final [report](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S). A copy of our google drive folder with the datasets is located [here](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S) as uploading full datasets into git is not effecient. To access a dataset, go to the 'Full Dataset' folder at this google drive link.
 
-Our project uses the Dataset [TartanAir](https://theairlab.org/tartanair-dataset/) which is known for its difficulty. Within Tartan Air we chose two separate two separate environments called Abandoned Factory Night and Hospital. Abandoned Factory Night was the main dataset around which we tested image enhacement for dark scenarios and Hospital was a secondary dataset used for testing our model on an indoor environment (note this environment however is not dark). 
+Our project uses the Dataset [TartanAir](https://theairlab.org/tartanair-dataset/) which is known for its difficulty. Within TartanAir, we chose two separate environments: Abandoned Factory Night and Hospital. Abandoned Factory Night is a dark outdoor dataset, and served as the main dataset we used to develop & test image enhacement techniques. We compared our performance to the previous team's image enhancement method as well as baseline ORBSLAM3. The Hospital dataset was chosen as a stretch objective, because it is a very bright indoor dataset, and we wanted to challenge our image enhancement algorithm. 
 
 ## Project Features 
 Within this repository there are the image ehancement technique files in the form of jupyter notebooks used to improve the dataset, python files to convert the dataset, there is much of the orbslam 3 repo including our modifications to the Settings.cc file, as well as files for setup of a Docker environment in order to run ORB-SLAM  
