@@ -1,4 +1,4 @@
-Note: Our team used the baseline ORBSLAM3 which is documented below. Our drive folder contains all of the specific .yaml and dataset files for structuring. Our team also noticed a bug within the Settings.cc of the orbslam3 repo, and our updated copy is contained in the main folder of the repository.
+Note: Our team used the baseline ORBSLAM3 which is documented below. Our drive folder contains all of the specific .yaml and dataset files for structuring. Our team also noticed a bug within the Settings.cc of the ORBSLAM3 repo, and our updated copy is contained in the main folder of the repository.
 
 # ORB-SLAM3
 
