@@ -1,7 +1,5 @@
 # Image Enhancement for Visual-Inertial SLAM in Dark Scenarios
 
-Image Enhancement for Visual Inertial SLAM in Dark Scenarios
-
 Mobile Robotics Winter 2023 Team 2
 
 This repository contains the code for our final project for Mobile Robotics. Our project was based on a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside a visual SLAM algorithm called ORBSLAM3 in order to reduce tracking error/absolute translational error. 
@@ -42,9 +40,9 @@ To run ORBSLAM3 on a TartanAir Data set:
 ```
 
 ## Image Enhancement
-Go to image_enhancement
-There are 4 jupyter notebook
-They are read data from Google Drive and we also recommend using Google colab and taking advantage of CUDA (URetinext_Net.ipynd uses CUDA). 
+Go to image_enhancement.
+There are 4 jupyter notebook.
+They are read data from Google Drive. We also recommend using Google colab and taking advantage of CUDA (URetinext_Net.ipynd uses CUDA). 
 Notice that you have change the Google Drive location to the location you want to use.
 
 
