@@ -7,15 +7,15 @@ Our use case is specifically for dark environments, as opposed to the previous t
 
 The winter 2022 Team's Repository is found [here](https://github.com/Maithilishetty/Mobile_Robotics_Team22). 
 
-Here is our final [presentation](https://docs.google.com/presentation/d/1JiwIiU2ep6RfWaUEhsucTmFSWXvVtnpb/edit#slide=id.p1), [video](https://www.youtube.com/watch?v=Kg4_dr7qAi8), and final [report](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S). A copy of our google drive folder with the datasets is located [here](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S) as uploading full datasets into git is not effecient. To access a dataset, go to the 'Full Dataset' folder at this google drive link.
+Here is our final [presentation](https://docs.google.com/presentation/d/1JiwIiU2ep6RfWaUEhsucTmFSWXvVtnpb/edit#slide=id.p1), [video](https://www.youtube.com/watch?v=Kg4_dr7qAi8), and final [report](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S). A copy of our Google Drive folder with the datasets is located [here](https://drive.google.com/drive/u/0/folders/1EeNf3pVsSfgrlBif_ObC9zKsfOXbuV2S) as uploading full datasets into GitHub is not effecient. To access a dataset, go to the 'Full Dataset' folder on our Google Drive.
 
-Our project uses the Dataset [TartanAir](https://theairlab.org/tartanair-dataset/) which is known for its difficulty. Within TartanAir, we chose two separate environments: Abandoned Factory Night and Hospital. Abandoned Factory Night is a dark outdoor dataset, and served as the main dataset we used to develop & test image enhacement techniques. We compared our performance to the previous team's image enhancement method as well as baseline ORBSLAM3. The Hospital dataset was chosen as a stretch objective, because it is a very bright indoor dataset, and we wanted to challenge our image enhancement algorithm. 
+Our project uses the [TartanAir](https://theairlab.org/tartanair-dataset/) Dataset, which is known for its difficulty. Within TartanAir, we chose two separate environments: Abandoned Factory Night and Hospital. Abandoned Factory Night is a dark outdoor dataset, and served as the main dataset we used to develop & test our image enhacement techniques. We compared our performance to the previous team's image enhancement method as well as baseline ORBSLAM3. The Hospital dataset was chosen as a stretch objective, because it is a very bright indoor dataset, and we wanted to challenge our image enhancement algorithm. 
 
 ## Project Features 
-Within this repository there are the image ehancement technique files in the form of jupyter notebooks used to improve the dataset, python files to convert the dataset, there is much of the orbslam 3 repo including our modifications to the Settings.cc file, as well as files for setup of a Docker environment in order to run ORBSLAM  
+Within this repository there are python files to convert the raw dataset into a form that can be easily used by ORBSLAM3 (ie Kitti form, in our case), image ehancement technique files in the form of jupyter notebooks used to improve the dataset, and much of the ORBSLAM3 repo which is required to run our project. We've also included our modifications to the Settings.cc file (within ORBSLAM3), as well as files for setup of a Docker environment in order to run ORBSLAM3.
 
 ## Dataset conversion
-In order to use the Tartan Air dataset it is critical to covert the dataset to a form compatible with ORBSLAM. As mentioned in the ORBSLAM3 documentation two of such compatible forms are the Euroc and Kitti Formats. Our team used the Kitti Format. While the original datasets can be pulled directly from TartanAir, our google drive also contains the Dataset Files converted for use. 
+In order to use the TartanAir dataset it is critical to convert the dataset to a form compatible with ORBSLAM. As mentioned in the ORBSLAM3 documentation, two of such compatible forms are the Euroc and Kitti Formats. Our team used the Kitti Format. While the original datasets can be pulled directly from TartanAir, our Google Drive also contains the Dataset Files converted for use. 
 
 To convert the ground truth file into Kitti format run
 ```
@@ -42,12 +42,12 @@ To run ORBSLAM3 on a TartanAir Data set:
 ## Image Enhancement
 Go to image_enhancement.
 There are 4 jupyter notebooks.
-They read data from Google Drive. We also recommend using Google colab and taking advantage of CUDA (URetinext_Net.ipynd uses CUDA). 
+They read data from Google Drive. We also recommend using Google Colab and taking advantage of CUDA (URetinext_Net.ipynd uses CUDA). 
 Notice that you have to change the Google Drive location to the location you want to use.
 
 
 ## Calculating Absolute Translational Errror 
-To calculate Absolute Translational Error our team used resources from the evo library located [here](https://github.com/MichaelGrupp/evo). 
+To calculate Absolute Translational Error, our team used resources from the evo library located [here](https://github.com/MichaelGrupp/evo). 
 ```
 evo_ape kitti gt.txt pred.txt -va -p
 ```
