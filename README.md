@@ -1,4 +1,4 @@
-# ImageEnhancementfor-Visual-Inertial-SLAM-in-Dark
+# Image Enhancement for Visual-Inertial SLAM in Dark Scenarios
 
 Image Enhancement for Visual Inertial SLAM in Dark Scenarios
 
