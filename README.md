@@ -4,7 +4,7 @@ Image Enhancement for Visual Inertial SLAM in Dark Scenarios
 
 Mobile Robotics Winter 2023 Team 2
 
-This repository contains the code for our final project for Mobile Robotics. Our project was built off of a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside the visual SLAM algorith called ORB-SLAM3 in order to reduces tracking/ translational error. 
+This repository contains the code for our final project for Mobile Robotics. Our project was built off of a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside the visual SLAM algorithm called ORB-SLAM3 in order to reduces tracking/ translational error. 
 This repository contains the code for our final project for Mobile Robotics. Our project was built off of a previous team's final project (Winter 2022 Team 22) and compares different image enhancement techniques used alongside the visual SLAM algorith called ORB-SLAM3 in order to reduces tracking/ translational error. Our use case is specifically for dark environments. 
 
 Thew winter 2022 Team's Repository is found [here](https://github.com/Maithilishetty/Mobile_Robotics_Team22). 
