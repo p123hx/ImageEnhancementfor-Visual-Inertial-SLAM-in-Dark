@@ -1,8 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-authors:
-  - family-names: Barrett, de Souza, Haghi-Tabrizi, Pu, Zhang
-    given-names: Jordan, Marisa, Awrod, Hongxi, Jinyuan 
+authors:Jordan Barrett, Marisa de Souza, Awrod Haghi-Tabrizi, Hongxi Pu, Jinyuan Zhang
 title: "Image Enhancement for Visual Inertial SLAM in Dark Scenarios"
 date-released: 2023-04-19
+
 
