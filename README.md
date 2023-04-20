@@ -29,7 +29,7 @@ tartan_to_kitt.py
 
 ## Building Orbslam3
 Refer to [ORBSLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)
-We have provided an easy way to build and run ORBSLAM3 using docker(modified volumn in [compose file](https://github.com/p123hx/ImageEnhancementfor-Visual-Inertial-SLAM-in-Dark/blob/main/Docker/docker-compose.yaml) to mount dataset path to the container):
+We have provided an easy way to build and run ORBSLAM3 using docker (modified column in [compose file](https://github.com/p123hx/ImageEnhancementfor-Visual-Inertial-SLAM-in-Dark/blob/main/Docker/docker-compose.yaml) to mount dataset path to the container):
 ```
 cd Dockerfile
 docker-compose up
